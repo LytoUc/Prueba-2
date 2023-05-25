@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/foto5.png" />
+    <title>PetShop, la mejor tienda de mascotas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="menu-superior"></div>
+
+    <br />
+
+    <main role="main">
+      <div class="container">
+        <h1>Ingresar</h1>
+        <br />
+        <form action="" id="formulario_ingresar">
+          <div class="mb-3 fw-bold">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Ej: ejemplo@mail.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3 fw-bold">
+            <label for="password" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <br />
+          <button type="submit" id="iniciar_sesion" class="btn btn-primary">
+            Iniciar sesión
+          </button>
+        </form>
+        <br />
+        <br />
+        <a href="registro.html">Registrarse</a>&nbsp;&nbsp;&nbsp;<a href=""
+          >Olvidé mi contraseña</a
+        >
+        <br />
+        <a href="inicio_cliente.html"
+          >Presiona aquí para simular que ingresaste como cliente</a
+        >
+        <br />
+        <a href="administracion.html"
+          >Presiona aquí para simular que ingresaste como administrador</a
+        >
+        <br />
+        <br />
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/traducciones.js"></script>
+    <script src="js/formulariosJQValidate.js"></script>
+
+    <!-- Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Mis scripts -->
+    <!-- Mis scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>
