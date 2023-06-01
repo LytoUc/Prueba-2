@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/foto5.png" />
+    <title>PetShop, la mejor tienda de mascotas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="menu-superior"></div>
+    <br />
+
+    <div style="margin-left: 30px">
+      <h1>Mantenedor de Productos</h1>
+    </div>
+
+    <div class="container-fluid"></div>
+    <form action="" id="formularioMP">
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+          <label for="colFormLabel" id="id" class="col-sm-2 col-form-label"
+            >ID</label
+          >
+          <div class="col-sm-1">
+            <input
+              type="text"
+              class="form-control"
+              name="id"
+              id="id"
+              id="colFormLabel"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+          <label
+            for="colFormLabel"
+            id="categoria"
+            class="col-sm-2 col-form-label"
+            >Categoría</label
+          >
+          <div class="col-sm-6">
+            <div class="col-6">
+              <label class="visually-hidden" for="autoSizingSelect"
+                >Preference</label
+              >
+              <div class="col-sm-6">
+                <select
+                  class="form-select"
+                  name="categoria"
+                  id="categoria"
+                  id="autoSizingSelect"
+                >
+                  <option selected>Elegir...</option>
+                  <option value="1">Perros</option>
+                  <option value="2">Gatos</option>
+                  <option value="3">Otros...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-sm-2 col-md-6 text-center" id="foto">
+          <img src="img/foto13.jpg" alt="" class="right-image" />
+          <div class="mb-2">
+            <div class="right-image">
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+          <label for="colFormLabel" id="nombre" class="col-sm-2 col-form-label"
+            >Nombre</label
+          >
+          <div class="col-sm-3">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              class="form-control"
+              id="colFormLabel"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+              <label for="colFormLabel" class="col-sm-2 col-form-label"
+                >Descripción</label
+              >
+              <div class="col-sm-4">
+              <textarea
+                class="form-control"
+                name="descripcion"
+                style="height: 100px"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+          <label for="colFormLabel" id="precio" class="col-sm-2 col-form-label"
+            >Precio</label
+          >
+          <div class="col-sm-2">
+            <input
+              type="text"
+              name="precio"
+              id="precio"
+              class="form-control"
+              id="colFormLabel"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+          <label for="colFormLabel" id="desc" class="col-sm-2 col-form-label"
+            >Descuento subscripctor</label
+          >
+          <div class="col-sm-1">
+            <input
+              type="text"
+              name="desc"
+              id="desc"
+              class="form-control"
+              id="colFormLabel"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-left: 60px">
+        <div class="row mb-3">
+          <label
+            for="colFormLabel"
+            id="descxoferta"
+            class="col-sm-2 col-form-label"
+            >Descuento por oferta</label
+          >
+          <div class="col-sm-1">
+            <input
+              type="text"
+              name="descxoferta"
+              id="descxoferta"
+              class="form-control"
+              id="colFormLabel"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- botones -->
+
+      <div style="margin-left: 60px">
+        <div class="row" id="botones">
+          <div class="col text-left">
+            <button type="submit" id="cargar" class="btn btn-primary">
+              Guardar
+            </button>
+            <button type="submit" class="btn btn-primary">Nuevo</button>
+            <button type="reset" class="btn btn-primary">Eliminar</button>
+            <button type="reset" class="btn btn-primary">Limpiar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+            <th scope="col">% Desc. Subscripctor</th>
+            <th scope="col">% Desc. Oferta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Perros</td>
+            <td>Saco de alimento seco Fit Formula</td>
+            <td>Saco de comida Fit adulto para raza pequeña de 10 kgs</td>
+            <td>$24.300</td>
+            <td>5%</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Perros</td>
+            <td>Saco de alimento seco Pedigree</td>
+            <td>
+              Saco de comida Pedigree adulto para adultos de carne de 15 kgs
+            </td>
+            <td>$28.500</td>
+            <td>5%</td>
+            <td>5%</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Perros</td>
+            <td>Saco de alimento seco Pedigree High Protein</td>
+            <td>
+              Saco de comida Pedigree adulto con gramos de proteina adicionales
+              de 2,7 kgs
+            </td>
+            <td>$13,190</td>
+            <td>5%</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Gatos</td>
+            <td>Saco de alimento seco Whiskas</td>
+            <td>
+              Saco de comida Whiskas para gatos de +1 año sabor carne de 3 kgs
+            </td>
+            <td>$13,090</td>
+            <td>5%</td>
+            <td>10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="footer"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/traducciones.js"></script>
+    <script src="js/formulariosJQValidate.js"></script>
+
+    <!-- Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Mis scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

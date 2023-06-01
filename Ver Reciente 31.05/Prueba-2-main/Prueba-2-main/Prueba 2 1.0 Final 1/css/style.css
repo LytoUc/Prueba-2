@@ -1,0 +1,110 @@
+a,
+a:visited {
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.carro {
+    width: 40px;
+}
+
+.thumbnail-product {
+    height: 200px !important;
+    max-width: 200px !important;
+}
+
+.precio-normal {
+    text-decoration: line-through;
+}
+
+.precio-oferta {
+    color: green;
+}
+
+.precio {
+    color: blue;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.img-small {
+    max-width: 150px;
+    /* cambia el valor según tu preferencia */
+    display: block;
+    margin: 0 auto;
+}
+
+/*style Daniel*/
+.container {
+    position: relative;
+    /* Establecer el posicionamiento del contenedor como relativo */
+}
+
+.right-image {
+    width: 40%;
+    position: absolute;
+    /* Establecer el posicionamiento de la imagen como absoluto */
+    top: 0;
+    /* Alinear la imagen en la parte superior del contenedor */
+    right: 0;
+    /* Alinear la imagen en la parte derecha del contenedor */
+}
+
+.zoomoutperfiles {
+    width: 10%;
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* Opcional: alinea las tarjetas al centro de la página */
+}
+
+.card {
+    width: 260px;
+    /*.card logra ajsutar el espacio que ocupan las cards en la pantalla*/
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    /*Logra que las imagenes usen todo el espacio de la card sin dejar espacios disparejos*/
+}
+
+
+/*Las siguientes clases son solamente para dar espaciado*/
+.tabuladotexto {
+    margin-left: 70px;
+}
+
+.tabuladotitulomiscompras {
+    margin-left: 135px;
+}
+
+.tabuladocards {
+    margin-left: 100px;
+}
+
+.producto{
+    width: 100%;
+}
+
+.text-product{
+    text-align: center;
+}
+
+label.error {
+    color: darkred;
+}
+
+input.error {
+    border: 1px solid darkred;
+}
+
